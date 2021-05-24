@@ -81,7 +81,7 @@ $ ./'insert-udp-script'.py
 Open new Terminal on receiving computer \
 $ python3 udp-receive.py \
   or \
-$ ./udp-receive.py \
+$ ./udp-receive.py
 
 To receive the stream through VLC: \
 - Changing the IP-address in the sdp is necessary. 
