@@ -95,6 +95,7 @@ $ ./udp-rec.py
 There are currently two servo scripts, where the ser-110x.py script is used to manually run the servo by typing in 1 + enter, and 2 + enter to stop. \
 The scheduled.py script is to schedule a cleaning interval. \
 The interval is currently set to run every 5 seconds for testing purposes, but other options are tagged in the script and can replace the 5 second function. \
+\
 $ sudo python3 scheduled.py \
   or \
 $ python3 ser-110x.py
