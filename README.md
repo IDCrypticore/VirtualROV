@@ -64,7 +64,9 @@ $ python3 ser-110x.py
 # USB on/off
 A battery charger is connected to the USB port on the Xavier, whereas the usb-state.py script is used to schedule when the USB port will be enabled / disabled. \
 The interval should be lower than the time it takes to fully charge the battery. \
+  \
 $ sudo python3 usb-state.py \
+  \
 The interval is currently set to run every 10 seconds for testing purposes, but other options are tagged in the script and can replace the 10 second function. \
 This script rewrites the state within the state file located in /sys/class/regulator/regulator.13, but a safer option would be to implement a voltmeter to read the battery voltage, and rewrite the script to enable/disable the USB port based on that value.
 
