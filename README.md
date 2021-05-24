@@ -70,6 +70,9 @@ Remember to replace <IP-address-of-receiving-computer> with the IP-address of th
 \
 Make sure an ssh session has been established.\
 In Terminal of tenteam10-desktop (Jetson):\
+$ sudo nvpmodel -m 0 #To set the Xavier in max mode \
+$ sudo jetson_clocks \
+\
 $ python3 <insert-udp-script>.py \
   or
 $ ./<insert-udp-script>.py
