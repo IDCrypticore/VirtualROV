@@ -2,6 +2,41 @@
 This repositories contains the scripts for streaming in 720p and 1080p, additionally the scripts for running the SER-110X servo either manually or scheduled.
 The usb-state.py is a script to schedule when to power on/off the USB port of which the battery charger are connected to.
 
+# Dependency libraries
+cmake \
+build-essential \
+pkg-config \
+libx11-dev \
+libgtk-3-dev \
+libexpat1 -dev \
+libjpeg-dev \
+libgstreamer1.0 -dev \
+libgstreamer-plugins-base1.0-dev \
+libv4l-dev \
+v4l-utils \
+Openssh-server \
+gtk-doc-tools \
+gstreamer1.0 -alsa \
+gstreamer1.0 -plugins-base \
+gstreamer1.0 -plugins-good \
+gstreamer1.0 -plugins-bad \
+gstreamer1.0 -plugins-ugly \
+gstreamer1.0 -libav \
+libgstreamer1.0 -dev \
+libgstreamer -plugins-base1.0-dev \
+libgstreamer-plugins-good1.0-dev \
+libgstreamer-plugins-bad1.0-dev \
+openssh-server \
+
+# Other requirements
+- Linux Ubuntu 18.04
+- Python 2 and Python 3.6
+- OpenCV 3 or OpenCV 4
+- numpy
+- schedule
+- time
+
+
 # SSH connection and remote desktop
 If your computer is directly connected to the injector by ethernet, manually set your IP-address to 192.168.1.1 and gateway to 192.168.1.3
 If you want to connect to the virtualROV by being in the same local network, the network settings on the Jetson must be set to automatic.
