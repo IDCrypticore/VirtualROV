@@ -68,7 +68,7 @@ Remember to replace <IP-address-of-receiving-computer> with the IP-address of th
 - udp-to-vlc.sdp is used to view the stream in VLC. 
 \
 \
-Make sure an ssh session has been established.\
+- Make sure an ssh session has been established.\
 In Terminal of tenteam10-desktop (Jetson):\
 $ sudo nvpmodel -m 0 #To set the Xavier in max mode \
 $ sudo jetson_clocks \
@@ -83,7 +83,7 @@ $ python3 udp-receive.py \
 $ ./udp-receive.py \
 
 To receive the stream through VLC: \
-  Changing the IP-address in the sdp is necessary. \
+- Changing the IP-address in the sdp is necessary. 
 $ udp -v udp-to-vlc.sdp
   
 To record the UDP stream: \
