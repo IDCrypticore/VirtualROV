@@ -25,8 +25,7 @@ gstreamer1.0 -libav \
 libgstreamer1.0 -dev \
 libgstreamer -plugins-base1.0-dev \
 libgstreamer-plugins-good1.0-dev \
-libgstreamer-plugins-bad1.0-dev \
-openssh-server 
+libgstreamer-plugins-bad1.0-dev  
 
 # Other requirements
 - Linux Ubuntu 18.04
