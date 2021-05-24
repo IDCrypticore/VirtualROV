@@ -83,6 +83,7 @@ $ python3 udp-receive.py \
 $ ./udp-receive.py \
 
 To receive the stream through VLC: \
+  Changing the IP-address in the sdp is necessary. \
 $ udp -v udp-to-vlc.sdp
   
 To record the UDP stream: \
