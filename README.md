@@ -87,7 +87,7 @@ To receive the stream through VLC:
 - Changing the IP-address in the sdp is necessary. 
 $ udp -v udp-to-vlc.sdp
   
-To record the UDP stream: 
+To record the UDP stream: \
 $ python3 udp-rec.py \
   or \
 $ ./udp-rec.py
