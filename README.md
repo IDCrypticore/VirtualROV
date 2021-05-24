@@ -110,10 +110,10 @@ This script rewrites the state within the state file located in /sys/class/regul
 
 # Copying files to or from the Xavier
   Copy file from Xavier to receiving computer: \
-  $ scp tenteam10@<IP-address>:/home/tenteam10/<file-location>/<file-name> /path/to/destination/on/receiving/computer \
+  $ scp tenteam10@<IP-address>:/home/tenteam10/'file-location'/'file-name' /path/to/destination/on/receiving/computer \
   \
   Copy file from computer to Xavier: \
-  $ scp /home/<user>/<file-location>/<file-name> tenteam10@<IP-address>:/home/tenteam10
+  $ scp /home/'user'/'file-location'/'file-name' tenteam10@'IP-address':/home/tenteam10
 
 
   
