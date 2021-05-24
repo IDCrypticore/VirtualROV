@@ -108,4 +108,12 @@ $ sudo python3 usb-state.py \
 The interval is currently set to run every 10 seconds for testing purposes, but other options are tagged in the script and can replace the 10 second function. \
 This script rewrites the state within the state file located in /sys/class/regulator/regulator.13, but a safer option would be to implement a voltmeter to read the battery voltage, and rewrite the script to enable/disable the USB port based on that value.
 
+# Copying files to or from the Xavier
+  Copy file from Xavier to receiving computer: \
+  $ scp tenteam10@<IP-address>:/home/tenteam10/<file-location>/<file-name> /path/to/destination/on/receiving/computer \
+  \
+  Copy file from computer to Xavier: \
+  $ scp /home/<user>/<file-location>/<file-name> tenteam10@<IP-address>:/home/tenteam10
+
+
   
