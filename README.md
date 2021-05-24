@@ -2,6 +2,8 @@
 This repositories contains the scripts for streaming in 720p and 1080p, additionally the scripts for running the SER-110X servo either manually or scheduled.
 The usb-state.py is a script to schedule when to power on/off the USB port of which the battery charger are connected to.
 
+- $ git clone https://github.com/IDCrypticore/VirtualROV
+
 # Dependency libraries
 cmake \
 build-essential \
