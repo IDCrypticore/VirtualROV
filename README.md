@@ -115,5 +115,8 @@ This script rewrites the state within the state file located in /sys/class/regul
   Copy file from computer to Xavier: \
   $ scp /home/'user'/'file-location'/'file-name' tenteam10@'IP-address':/home/tenteam10
 
+  # Sources
+- https://github.com/JetsonHacksNano/CSI-Camera
+- https://forums.developer.nvidia.com/t/gstreamer-python-script-to-send-and-receive-udp-stream/176718/8
 
   
