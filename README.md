@@ -33,6 +33,7 @@ Remember to replace <IP-address-of-receiving-computer> with the IP-address of th
 - udp-rec.py is to record the stream, but is not visible before the user has stopped the recording. 
 - udp-to-vlc.sdp is used to view the stream in VLC. 
 \
+\
 Make sure an ssh session has been established.\
 In Terminal of tenteam10-desktop (Jetson):\
 $ python3 <insert-udp-script>.py \
