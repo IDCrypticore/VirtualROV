@@ -109,8 +109,9 @@ $ sudo python3 usb-state.py \
 The interval is currently set to run every 10 seconds for testing purposes, but other options are tagged in the script and can replace the 10 second function. \
 This script rewrites the state within the state file located in /sys/class/regulator/regulator.13, but a safer option would be to implement a voltmeter to read the battery voltage, and rewrite the script to enable/disable the USB port based on that value.
 
-Manually enable/disable USB port:
+Manually enable/disable USB port: \
 - Replace 'new-state' with enabled or disabled
+ \
   $ sudo -s \
   $ cd /sys/class/regulator/regulator.13 \
   $ echo 'new-state' > state
