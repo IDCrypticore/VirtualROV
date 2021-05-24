@@ -49,6 +49,6 @@ To receive the stream through VLC: \
 $ udp -v udp-to-vlc.sdp
   
 To record the UDP stream: \
-$ python3 udp-rec.py 
-  or
+$ python3 udp-rec.py \
+  or \
 $ ./udp-rec.py
