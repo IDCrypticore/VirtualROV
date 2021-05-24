@@ -74,8 +74,9 @@ $ sudo nvpmodel -m 0 #To set the Xavier in max mode \
 $ sudo jetson_clocks \
 \
 $ python3 'insert-udp-script'.py \
-  or
+  or\
 $ ./'insert-udp-script'.py
+\
 \
 Open new Terminal on receiving computer \
 $ python3 udp-receive.py \
