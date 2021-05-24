@@ -3,7 +3,7 @@ import sys
 import schedule
 import time
 
-# This script has to by run as super user (sudo python3 usb-state.py)
+# This script has to by ran as super user (sudo python3 usb-state.py)
 
 def release_battery():
     with open('/sys/class/regulator/regulator.13/state', 'r+') as f:
