@@ -59,13 +59,14 @@ $ jtop
 
 # Streaming
 You can either stream in 720p or 1080p, record or use VLC. \
-Remember to replace <IP-address-of-receiving-computer> with the IP-address of the receiving computer in the python script. 
+Remember to replace <IP-address-of-receiving-computer> with the IP-address of the receiving computer in the python script. \
 - udp720.py and udp1080.py have <IP-address-of-receiving-computer> to be replaced 
 - udp720direct.py and udp1080direct.py is streaming to 192.168.1.1 
 - udp720self.py is streaming to the Jetson itself (127.0.0.1) 
 - udp-receive is to receive the stream on port 5000 
 - udp-rec.py is to record the stream, but is not visible before the user has stopped the recording. 
 - udp-to-vlc.sdp is used to view the stream in VLC. 
+\
 \
 Make sure an ssh session has been established.\
 In Terminal of tenteam10-desktop (Jetson):\
