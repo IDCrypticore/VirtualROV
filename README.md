@@ -118,5 +118,7 @@ This script rewrites the state within the state file located in /sys/class/regul
   # Sources
 - https://github.com/JetsonHacksNano/CSI-Camera
 - https://forums.developer.nvidia.com/t/gstreamer-python-script-to-send-and-receive-udp-stream/176718/8
+- https://forums.developer.nvidia.com/t/switch-on-and-off-usb-ports-programmatically-on-agx/142974/4
+- https://learn.adafruit.com/adafruit-16-channel-servo-driver-with-raspberry-pi/using-the-adafruit-library
 
   
