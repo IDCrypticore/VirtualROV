@@ -4,6 +4,10 @@ The usb-state.py is a script to schedule when to power on/off the USB port of wh
 
 - $ git clone https://github.com/IDCrypticore/VirtualROV
 
+The only scripts need on the receiving computer are \
+udp-receive.py \
+udp-rec.py \
+and udp-to-vlc.sdp
 # Dependency libraries
 cmake \
 build-essential \
