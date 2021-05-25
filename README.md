@@ -128,6 +128,7 @@ $ echo 'new-state' > state
 Copying files to and from the Xavier might come in handy, for instance when having to do changes in a script. \
 Pull the script to your computer, and copy it back to the Xavier. \
   Copy file from Xavier to receiving computer: \
+\
   $ scp tenteam10@<IP-address>:/home/tenteam10/'file-location'/'file-name' /path/to/destination/on/receiving/computer \
   \
   Copy file from computer to Xavier: \
