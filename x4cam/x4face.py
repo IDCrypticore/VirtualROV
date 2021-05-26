@@ -1,3 +1,5 @@
+# MIT License attached
+
 import cv2
 from timecontext import Timer
 import numpy as np
