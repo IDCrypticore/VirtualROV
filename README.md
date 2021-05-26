@@ -1,8 +1,8 @@
 # VirtualROV
-This repositories contains the scripts for streaming in 720p and 1080p, additionally the scripts for running the SER-110X servo either manually or scheduled.\
-The usb-state.py is a script to schedule when to power on/off the USB port of which the battery charger are connected to.\
+This repositories contains the scripts for streaming in 720p and 1080p, additionally the scripts for running the SER-110X servo either manually or scheduled.
+The usb-state.py is a script to schedule when to power on/off the USB port of which the battery charger are connected to. \
 \
-Make sure the industrial ethernet cable is connected to the injector (on-shore) and the dry-mate connector on the camera rig (wet side).
+Make sure the industrial ethernet cable is connected to the injector (on-shore) and the dry-mate connector on the camera rig (wet side). \
 The Jetson AGX Xavier will power on automatically when the injector is connected to a socket.
 \
 - $ git clone https://github.com/IDCrypticore/VirtualROV
