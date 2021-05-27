@@ -6,7 +6,7 @@ from adafruit_motor import servo
 from adafruit_pca9685 import PCA9685
 from adafruit_motor import motor
 
-print('..initializing')
+print('Initializing..')
 
 #I2C bus interface
 i2c_bus=(busio.I2C(SCL, SDA))
@@ -19,6 +19,7 @@ pca.frequency = 50
 servoBR = servo.Servo(pca.channels[0], min_pulse=850, max_pulse=2350)
 
 while True:
+    # Key press input 1 + enter to start, and 2 + enter to stop
     user_control = input('Press 1 to start wiping and 2 to stop')
     if user_control == '1':
         for i in range(148):
