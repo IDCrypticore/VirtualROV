@@ -40,8 +40,8 @@ p.set_state(Gst.State.READY)
 p.set_state(Gst.State.PAUSED)
 p.set_state(Gst.State.PLAYING)
 
-# Run for 1000 seconds
-# This can be set to a desired value
+# Running for session 1000 seconds, before exit.
+# This can be set to another desired value.
 time.sleep(1000)
 
 # Done. Stop the pipeline before clean up on exit.
