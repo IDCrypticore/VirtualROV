@@ -12,12 +12,12 @@ def signal_handler(sig, frame):
     p.set_state(Gst.State.NULL)
     sys.exit(0)
 
-# Initialize gstreamer
+# Initialize GStreamer.
 GObject.threads_init()
 Gst.init(None)
 
-# Defining the GStreamer pipeline 
-# X and Y positions can be changed, for instance to a 2x2 grid, as well as the width and height on the display windows
+# Defining the GStreamer pipeline.
+# X and Y positions can be changed, for instance to a 2x2 grid, as well as the width and height on the display windows.
 gst_str = "nvcompositor name=mix background-w=1920 background-h=270 \
     sink_3::xpos=0    sink_3::ypos=0   sink_3::width=480 sink_3::height=270 \
     sink_2::xpos=480  sink_2::ypos=0   sink_2::width=480 sink_1::height=270 \
@@ -40,8 +40,8 @@ p.set_state(Gst.State.READY)
 p.set_state(Gst.State.PAUSED)
 p.set_state(Gst.State.PLAYING)
 
-# Run for 1000 seconds
-# This 
+# Running for session 1000 seconds, before exit.
+# This can be set to another desired value.
 time.sleep(1000)
 
 # Done. Stop the pipeline before clean up on exit.
