@@ -4,7 +4,7 @@ import cv2
 from timecontext import Timer
 import numpy as np
 
-
+# Defining the GStreamer pipeline
 def gstreamer_pipeline(
     sensor_id=0,
     sensor_mode=3,
@@ -38,7 +38,8 @@ def gstreamer_pipeline(
 
 
 def show_camera():
-    # Modify the flip_method parameter
+    # Modify the flip_method parameter, where 0 or 2 can be used to rotate the image 180 degrees.
+    # Designating the cameras each their own cap.
     print(gstreamer_pipeline(flip_method=0))
     left_cap = cv2.VideoCapture(
         gstreamer_pipeline(flip_method=0,display_width=480,display_height=270,framerate=30), cv2.CAP_GSTREAMER)
@@ -58,7 +59,7 @@ def show_camera():
                 ret_val, top_image = top_cap.read()
                 ret_val, sub_image = sub_cap.read()
                 # print(context_time.elapsed)
-                # Images are stacked horizontally
+                # Images are stacked horizontally using numpy.
                 camera_images = np.hstack((left_image, right_image, top_image, sub_image))
                 cv2.imshow("CSI Cameras", camera_images)
                 # cv2.imshow("CSI Camera", left_image)
@@ -67,7 +68,7 @@ def show_camera():
                 keyCode = cv2.waitKey(20) & 0xFF
             # print(context_time.elapsed)
             # print("---")
-            # ESC key to stop the program
+            # ESC key to stop the session.
             if keyCode == 27:
                 break
         left_cap.release()
