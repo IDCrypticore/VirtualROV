@@ -6,6 +6,7 @@ https://www.youtube.com/watch?v=UN0lvT2vK9c
 \
 https://www.youtube.com/watch?v=80dMn1XZPBk
 \
+\
 Make sure the industrial ethernet cable is connected to the injector (on-shore) and the dry-mate connector on the camera rig (wet side). \
 The Jetson AGX Xavier will power on automatically when the injector is connected to a socket.
 
