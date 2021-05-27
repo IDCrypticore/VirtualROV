@@ -40,7 +40,7 @@ p.set_state(Gst.State.READY)
 p.set_state(Gst.State.PAUSED)
 p.set_state(Gst.State.PLAYING)
 
-# Running session for 1000s, before exit.
+# Running session for 1000 seconds, before exit.
 # This can be set to another desired value.
 time.sleep(1000)
 
