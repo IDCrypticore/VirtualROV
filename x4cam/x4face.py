@@ -4,7 +4,7 @@ import cv2
 from timecontext import Timer
 import numpy as np
 
-
+# Defining GStreamer pipeline.
 def gstreamer_pipeline(
     sensor_id=0,
     sensor_mode=3,
@@ -38,7 +38,7 @@ def gstreamer_pipeline(
 
 
 def show_camera():
-
+# Importing Haar-like feature for eyes and face detection.
     face_cascade = cv2.CascadeClassifier(
         "/home/teamten/x4cam/haarcascades/haarcascade_frontalface_default.xml"
         )
@@ -46,7 +46,8 @@ def show_camera():
         "/home/teamten/x4cam/haarcascades/haarcascade_eye.xml"
         )
     
-    # Modify the flip_method parameter
+    # Modify the flip_method parameter, 0 or 2 can be used to rotate the image 180 degrees.
+    # The cameras are designated each their own cap.
     print(gstreamer_pipeline(flip_method=0))
     left_cap = cv2.VideoCapture(
         gstreamer_pipeline(flip_method=0,display_width=480,display_height=270,framerate=30), cv2.CAP_GSTREAMER)
@@ -67,7 +68,7 @@ def show_camera():
                 ret_val, sub_image = sub_cap.read()
                 # print(context_time.elapsed)
                 
-                # Images are stacked horizontally
+                # Images are stacked horizontally using numpy.
                 camera_images = np.hstack((left_image, right_image, top_image, sub_image))
 
                 gray = cv2.cvtColor(camera_images, cv2.COLOR_BGR2GRAY)
@@ -92,7 +93,7 @@ def show_camera():
                 keyCode = cv2.waitKey(20) & 0xFF
             # print(context_time.elapsed)
             # print("---")
-            # ESC key to stop the program
+            # ESC key to stop the session
             if keyCode == 27:
                 break
         left_cap.release()
