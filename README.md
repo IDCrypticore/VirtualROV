@@ -2,6 +2,10 @@
 This repositories contains the scripts for streaming in 720p and 1080p, additionally the scripts for running the SER-110X servo either manually or scheduled.
 The usb-state.py is a script to schedule when to power on/off the USB port of which the battery charger are connected to. \
 \
+https://www.youtube.com/watch?v=UN0lvT2vK9c
+\
+https://www.youtube.com/watch?v=80dMn1XZPBk
+\
 Make sure the industrial ethernet cable is connected to the injector (on-shore) and the dry-mate connector on the camera rig (wet side). \
 The Jetson AGX Xavier will power on automatically when the injector is connected to a socket.
 
